@@ -1,0 +1,45 @@
+PS C:\Users\81805\Desktop\github-basic-kadai>mkdir git_challenge
+
+    Directory: C:\Users\81805\Desktop\github- 
+basic-kadai
+
+Mode                 LastWriteTime     Length 
+----                 -------------     ------ 
+d----          2024/09/22    18:18
+
+PS C:\Users\81805\Desktop\github-basic-kadai>cd git_challenge           
+PS C:\Users\81805\Desktop\github-basic-kadai\git_challenge> echo "Hello,World!" > hello_world.txt
+PS C:\Users\81805\Desktop\github-basic-kadai\git_challenge> git add .
+PS C:\Users\81805\Desktop\github-basic-kadai\git_challenge> git commit -m "hello_world.txtを追加"
+[main acc5f7c] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git_challenge/hello_world.txt
+PS C:\Users\81805\Desktop\github-basic-kadai\git_challenge> git push -u origin main         
+Enter passphrase for key '/c/Users/81805/.ssh/id_rsa':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads       
+Compressing objects: 100% (2/2), done.        
+Writing objects: 100% (4/4), 364 bytes | 182.00 KiB/s, done.
+Total 4 (delta 0), reused 1 (delta 0), pack-reused 0 (from 0)
+To github.com:k-daira/github-basic-kadai.git
+   e4ff04f..acc5f7c  main -> main
+branch 'main' set up to track 'origin/main'.  
+PS C:\Users\81805\Desktop\github-basic-kadai\git_challenge> git add .
+PS C:\Users\81805\Desktop\github-basic-kadai\git_challenge> git commit -m "日本語訳を追加"  
+[main 732dc43] 日本語訳を追加
+ 1 file changed, 1 insertion(+)
+PS C:\Users\81805\Desktop\github-basic-kadai\git_challenge> git push -u origin main       
+Enter passphrase for key '/c/Users/81805/.ssh/id_rsa':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads       
+Compressing objects: 100% (2/2), done.        
+Writing objects: 100% (4/4), 400 bytes | 200.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:k-daira/github-basic-kadai.git
+   acc5f7c..732dc43  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\81805\Desktop\github-basic-kadai\git_challenge> git log --oneline      
+732dc43 (HEAD -> main, origin/main, origin/HEAD) 日本語訳を追加
+acc5f7c hello_world.txtを追加
